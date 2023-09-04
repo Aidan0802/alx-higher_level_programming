@@ -10,7 +10,7 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *check = list;
-	listint_t *match = list;
+	listint_t *match = list->next;
 
 
 	while (check != match)
