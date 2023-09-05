@@ -8,6 +8,3 @@ def uppercase(str):
         else:
             _str += i
     print("{}".format(_str))
-
-uppercase("hello world")
-
