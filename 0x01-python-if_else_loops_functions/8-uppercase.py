@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 def uppercase(str):
+    _str = ""
     for i in str:
         if 'a' <= i <= 'z':
             upper = chr(ord(i) - 32)
-            print("{}".format(upper), end='')
+            _str += upper
         else:
-            print(end=' ')
-    print()
+            _str += i
+    print("{}".format(_str))
+
+uppercase("hello world")
+
