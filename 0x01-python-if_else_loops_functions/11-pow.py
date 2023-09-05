@@ -4,5 +4,3 @@ def pow(a, b):
     for _ in range(b):
         res *= a
     return res
-
-print(pow(2, 8))
