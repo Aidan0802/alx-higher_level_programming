@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    if idx < 0:
+    if idx < 0 or idx not in range(len(my_list)):
         return None
-    for i in my_list:
-        if idx not in range(my_list):
-            return None
-        else:
-            return my_list[idx]
+    return my_list[idx]
