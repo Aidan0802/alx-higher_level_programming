@@ -6,7 +6,7 @@ def print_matrix_integer(matrix=[[]]):
             if element == row[-1]:
                 last = True
             if last:
-                print("{}".format(element), end="")
+                print("{:d}".format(element), end="")
             else:
-                print("{}".format(element), end=" ")
+                print("{:d}".format(element), end=" ")
         print()
