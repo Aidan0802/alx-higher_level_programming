@@ -18,7 +18,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
     else:
         b1 = tuple_b[0] if len(tuple_b) >= 1 else 0
         b2 = tuple_b[1] if len(tuple_b) >= 2 else 0
-        
     first = a1 + b1
     second = a2 + b2
 
