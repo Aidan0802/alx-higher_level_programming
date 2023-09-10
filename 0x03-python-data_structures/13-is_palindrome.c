@@ -45,10 +45,10 @@ int is_palindrome(listint_t **head)
 
 listint_t *rev_list(listint_t *head)
 {
-	listint_t *prev = NULL;
+	listint_t *prev;
 	listint_t *current = head;
-	listint_t *next = NULL;
-	
+	listint_t *next;
+
 	while (current)
 	{
 		next = current->next;
