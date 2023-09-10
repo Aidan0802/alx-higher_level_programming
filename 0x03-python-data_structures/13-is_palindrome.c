@@ -26,7 +26,7 @@ int is_palindrome(listint_t **head)
 	fir_half = *head;
 
 	while (sec_half)
-		if (sec_half->next != fir_half->next)
+		if (sec_half->n != fir_half->n)
 			return (0);
 
 	return (1);
@@ -39,13 +39,13 @@ int is_palindrome(listint_t **head)
  * Return: Reversed list
  */
 
-listint_t rev_list(listint_t *head)
+listint_t *rev_list(listint_t *head)
 {
 	listint_t *prev = NULL;
 	listint_t *current = head;
 	listint_t *next = NULL;
-
-	while (!current)
+	
+	while (current)
 	{
 		next = current->next;
 		current->next = prev;
