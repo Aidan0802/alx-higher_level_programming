@@ -25,9 +25,13 @@ int is_palindrome(listint_t **head)
 	sec_half = rev_list(s->next);
 	fir_half = *head;
 
-	while (sec_half)
+	while (sec_half != NULL)
+	{
 		if (sec_half->n != fir_half->n)
 			return (0);
+		sec_half = sec_half->next;
+		fir_half = fir_half->next;
+	}
 
 	return (1);
 }
