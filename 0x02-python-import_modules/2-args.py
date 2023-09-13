@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 import sys
 
-args = sys.argv[1:]
-argc = 1
-for i in args:
-    print("{}: {}".format(argc, i))
+argv = sys.argv[1:]
+argc = 0
+while argc < len(argv):
+    arg = argv[argc]
+    print("{}: {}".format(argc + 1, arg))
     argc += 1
