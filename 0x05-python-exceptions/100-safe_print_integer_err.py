@@ -2,7 +2,7 @@
 import sys
 
 def safe_print_integer_err(value):
-    message = "Exception: Unknown format code \'d\' for object of type \'str\'"
+    message = "Exception: Unknown format code 'd' for object of type 'str'"
     try:
         if isinstance(value, int):
             print("{:d}".format(value))
