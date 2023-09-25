@@ -8,10 +8,13 @@ def list_division(my_list_1, my_list_2, list_length):
             first = my_list_1[i]
             second =  my_list_2[i]
 
-            if not isinstance(first, int) and isinstance(second, int):
+            if not isinstance(first, int) or not isinstance(second, int):
                 raise TypeError("wrong type")
             if second == 0:
                 raise ZeroDivisionError("division by 0")
+
+            div = first / second
+            result.append(div)
         except IndexError as error:
             print(error)
             result.append(0)
@@ -21,4 +24,4 @@ def list_division(my_list_1, my_list_2, list_length):
         except ZeroDivisionError as error:
             print(error)
             result.append(0)
-        return result
+    return result
