@@ -8,7 +8,8 @@ def safe_print_integer_err(value):
         if isinstance(value, int):
             print("{:d}".format(value))
             return True
-        raise Exception(error)
+        else:
+            raise Exception(error)
     except Exception:
         sys.stderr.write("Exception: {}\n".format(error))
         return False
