@@ -8,4 +8,4 @@ class Square:
 
         Args: param1: The size of the Square.
         """
-        self.size = size
+        self.__size = size
