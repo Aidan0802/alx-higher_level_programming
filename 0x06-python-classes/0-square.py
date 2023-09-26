@@ -2,6 +2,8 @@
 """
 Define class Square
 """
+
+
 class Square:
     """
     Empty class Square.
