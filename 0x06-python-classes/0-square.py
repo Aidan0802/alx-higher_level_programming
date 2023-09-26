@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 class Square:
-    """Class square does nothing.
-    """
+    '''Class square does nothing.
+    '''
     pass
