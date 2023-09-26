@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Define class Square.
+"""
 
 
 class Square:
@@ -17,7 +20,7 @@ class Square:
         else:
             self.__size = size
 
-        def cal_area(self):
+        def area(self):
             """Calculates and returns area of square
             
             Return: int: Area of square
