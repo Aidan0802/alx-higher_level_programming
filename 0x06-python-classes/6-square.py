@@ -32,7 +32,7 @@ class Square:
             ValueError: if value is not >= to 0
         """
         if not isinstance(value, int):
-            raise TypeError("size must be integer")
+            raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
@@ -63,6 +63,8 @@ class Square:
     def my_print(self):
         """Prints the square with the character '#'."""
         if self.__position == 0:
+            print()
+        elif self.__size == 0:
             print()
         else:
             for _ in range(self.__position[1]):
