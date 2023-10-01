@@ -1,0 +1,42 @@
+**0-add_integer Module Documentation**
+
+This documentation provides info on how to use add_integer function
+
+**Importing the add_integer Function into interactive shell**
+	>>> add = __import__('0-add_integer').add_integer
+
+Test Adding number 5 and 8
+	>>> add(5, 8)
+	13
+
+Test Adding number 100 and -2
+	>>> add(100, -2)
+	98
+
+Test Adding number 100.3 and -2
+	>>> add(100.3, -2)
+	98
+
+Test Adding number -10 and - 12
+	>>> add(-10, -12)
+	-22
+
+Test Adding a number and string
+	>>> add(4, "School")
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Test Adding None and a number
+	>>> add(None, 5)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Test Adding 5 and default
+	>>> add(5)
+	103
+
+Test Adding large numbers
+	>>> add(1000**9, 1000**9)
+	2000000000000000000000000000
