@@ -1,5 +1,23 @@
 #!/usr/bin/python3
+"""
+
+This module consist of a function that div matrix elements
+
+"""
+
+
 def matrix_divided(matrix, div):
+    """ This function divides matrix elements
+
+    Args:
+        parm1: matrix list
+        parm2: integer
+
+    Raises:
+        TypeError: matrix is not a list consisting of integers/floats
+        ZeroDivisionError: div must not be equal to zero
+
+    """
     new_matrix = []
     error_1 = "matrix must be a matrix (list of lists) of integers/floats"
     error_2 = "Each row of the matrix must have the same size"

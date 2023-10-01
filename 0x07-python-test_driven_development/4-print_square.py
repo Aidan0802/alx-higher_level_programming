@@ -1,5 +1,22 @@
 #!/usr/bin/python3
+"""
+
+This module consist of a print function
+
+"""
+
+
 def print_square(size):
+    """ This function prints a square of '#'
+
+    Args:
+        parm: size of the square
+
+    Raises:
+        TypeError: size must be an integer
+        ValueError: size must be greater or equal to 0
+
+    """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:

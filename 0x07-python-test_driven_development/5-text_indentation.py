@@ -1,5 +1,22 @@
 #!/usr/bin/python3
+"""
+
+This module consist of one text indentation function
+
+"""
+
+
 def text_indentation(text):
+    """ This function checks for ".", "?" and ":"
+    and prints sentences on newline spaces by a newline
+
+    Args:
+        parm: string
+
+    Raises:
+        TypeError: text must be a string
+
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     current_sentence = []
