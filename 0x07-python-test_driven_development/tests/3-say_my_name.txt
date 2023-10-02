@@ -1,0 +1,28 @@
+**3-say_my_name Module Documentation**
+
+This documentation provides info on how to use say_my_name function
+
+**Importing the add_integer Function into interactive shell**
+>>> my_name = __import__('3-say_my_name').say_my_name
+
+Test strings
+>>> my_name("John", "Smith")
+My name is John Smith
+
+Test string and number 
+>>> my_name("Amy", 5)
+Traceback (most recent call last):
+	...
+TypeError: last_name must be a string
+
+Test number and string
+>>> my_name(6, "Smith")
+Traceback (most recent call last):
+        ...
+TypeError: first_name must be a string
+
+Test non-string
+>>> my_name(Amy, Smith)
+Traceback (most recent call last):
+	...
+NameError: name 'Amy' is not defined

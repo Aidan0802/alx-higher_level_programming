@@ -1,0 +1,19 @@
+**5-text_indentation Module Documentation**
+
+This documentation provides info on how to use text_indetation function
+
+**Importing the add_integer Function into interactive shell**
+>>> text_inden = __import__('5-text_indentation').text_indentation
+
+Test prints correct output
+>>> text = "This is a string. Is it working?"
+>>> text_inden(text)
+This is a string.
+
+Is it working?
+
+Test non-string
+>>> text_inden(5)
+Traceback (most recent call last):
+	...
+TypeError: text must be a string

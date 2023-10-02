@@ -1,0 +1,32 @@
+**4-print_sqaure Module Documentation**
+
+This documentation provides info on how to use print_square function
+
+**Importing the add_integer Function into interactive shell**
+>>> print_square = __import__('4-print_square').print_square
+
+Test print square size 4
+>>> print_square(4)
+####
+####
+####
+####
+
+Test size less than 0
+>>> print_square(-1)
+Traceback (most recent call last):
+	...
+ValueError: size must be >= 0
+
+Test argument is integer
+>>> print_square("a")
+Traceback (most recent call last):
+	...
+TypeError: size must be an integer
+
+Test missing argument integer
+>>> print_square()
+Traceback (most recent call last):
+	...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
