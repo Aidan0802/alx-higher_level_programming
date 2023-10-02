@@ -1,0 +1,49 @@
+**2-matrix_divided Module Documentation**
+
+This documentation provides info on how to use add_integer function
+
+**Importing the matrix_divided Function into interactive shell**
+>>> matrix_div = __import__('2-matrix_divided').matrix_divided
+
+Test div is positive number
+>>> matrix = [[10, 8, 6], [4, 2, 98]]
+>>> matrix_div(matrix, 2)
+[[5.0, 4.0, 3.0], [2.0, 1.0, 49.0]]
+
+Test div is negative number
+>>> matrix = [[10, 8, 6], [4, 2, 98]]
+>>> matrix_div(matrix, -2)
+[[-5.0, -4.0, -3.0], [-2.0, -1.0, -49.0]]
+
+Test row not the same size
+>>> matrix = [[10, 8, 6], [4, 98]]
+>>> matrix_div(matrix, 2)
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
+
+Test div is not a number
+>>> matrix = [[10, 8, 6], [4, 2, 98]]
+>>> matrix_div(matrix, "School")
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+
+Test div is 0
+>>> matrix = [[10, 8, 6], [4, 2, 98]]
+>>> matrix_div(matrix, 0)
+Traceback (most recent call last):
+	...
+ZeroDivisionError: division by zero
+
+Test if divided to 2 decimal
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_div(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Test if matrix list of integers/floats
+>>> matrix = [[1, 2, 3], [4, '5', 6]]
+>>> matrix_div(matrix, 3)
+Traceback (most recent call last):
+        ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
