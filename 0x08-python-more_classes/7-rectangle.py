@@ -77,12 +77,16 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """print the rectangle with the character #"""
+        """print the rectangle with the character provided"""
         rectangle = ""
         if self.__height == 0 or self.__width == 0:
             return ""
-        for _ in range(self.__height):
-            rectangle += Rectangle.print_symbol * self.__width + "\n"
+        for i in range(self.__height):
+            if isinstance(Rectangle.print_symbol, list):
+                symbols = " ".join(Rectangle.print_symbol)
+                rectangle += symbols * self.__width + "\n"
+            else:
+                rectangle += Rectangle.print_symbol * self.__width + "\n"
         return rectangle.rstrip()
 
     def __repr__(self):
