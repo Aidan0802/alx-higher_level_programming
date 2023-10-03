@@ -7,4 +7,6 @@ This module defines a Rectangle class
 
 
 class Rectangle:
+    """Empty Rectangle class"""
+
     pass
