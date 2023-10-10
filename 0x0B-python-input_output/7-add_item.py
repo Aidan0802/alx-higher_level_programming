@@ -13,5 +13,5 @@ if os.path.exists("add_item.json"):
     my_list = load_file("add_item.json")
 
 for i in sys.argv[1:]:
-    my_list.append(arg)
+    my_list.append(i)
 save_file(my_list, "add_item.json")
