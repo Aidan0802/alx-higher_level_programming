@@ -15,9 +15,4 @@ def append_write(filename="", text=""):
         parm2: Text to append
     """
     with open(filename, "a", encoding="utf-8") as file:
-        text_start = file.tell()
-        file.write(text)
-        text_end = file.tell()
-
-    count = text_end - text_start
-    return count
+        return file.write(text)
