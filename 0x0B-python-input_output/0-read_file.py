@@ -11,5 +11,5 @@ def read_file(filename=""):
     Args:
         parm1: Textfile input
     """
-    with open(filename, 'r', encoding="utf-8") as file:
+    with open(filename, "r", encoding="utf-8") as file:
         read_data = file.read()
