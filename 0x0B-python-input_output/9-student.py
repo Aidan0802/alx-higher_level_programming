@@ -23,12 +23,7 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """Retrieves a dictionary representation of a Student instance
-        Raises:
-            TypeError: First/Last name must be a string
-            TypeError: Age must be a integer
-            ValueError: Age should be equal or greater than 0
-        """
+        """Retrieves a dictionary representation of a Student instance"""
         student_dict = {
                 "first_name": self.first_name,
                 "last_name": self.last_name,
