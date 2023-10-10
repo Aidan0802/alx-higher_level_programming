@@ -12,4 +12,6 @@
 | 7-add_item.py | Adds all arguments to a Python list, and then save them to a file |
 | 8-class_to_json.py | Returns the dictionary description with simple data structure for JSON |
 | 9-student.py | Class Student that defines a student |
-| 
+| 10-student.py | Class Student that defines a student by: (based on 9-student.py) |
+| 11-student.py | Class Student that defines a student by: (based on 10-student.py) |
+| 12-pascal_triangle.py | Returns a list of lists of integers representing the Pascal’s triangle of n |
