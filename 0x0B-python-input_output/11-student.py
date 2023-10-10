@@ -35,7 +35,7 @@ class Student:
                 if hasattr(self, attr):
                     student_dict[attr] = getattr(self, attr)
             return student_dict
-    
+
     def reload_from_json(self, json):
         """Replaces all attributes of the Student instance
         Args:
