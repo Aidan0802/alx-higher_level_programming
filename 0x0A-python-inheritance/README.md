@@ -1,4 +1,4 @@
-#Python - Inheritance
+# Python - Inheritance
 
 | Filename | Description |
 | -------- | ----------- |
