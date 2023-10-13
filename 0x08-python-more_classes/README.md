@@ -1,7 +1,7 @@
-# 0x08-python-more_classes
+# Python - More classes
 
 | Filename | Description |
-| -------- | ___________ |
+| -------- | ----------- |
 | 0-rectangle.py | Empty class Rectangle that defines a rectangle |
 | 1-rectangle.py | Class Rectangle that defines a rectangle by: (based on 0-rectangle.py) |
 | 2-rectangle.py | Rectangle set, get, calculate area and perimeter: (based on 1-rectangle.py) |
