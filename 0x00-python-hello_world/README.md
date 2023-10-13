@@ -1,4 +1,4 @@
-#0x00-python-hello_world
+# ython-hello_world
 
 | Filename | Decription |
 | -------- | ---------- |
