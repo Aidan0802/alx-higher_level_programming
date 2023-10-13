@@ -16,4 +16,3 @@ def lookup(obj):
     """
     attrs_and_methods = dir(obj)
     return attrs_and_methods
-
