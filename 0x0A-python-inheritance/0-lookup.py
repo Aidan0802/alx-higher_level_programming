@@ -15,6 +15,5 @@ def lookup(obj):
         parm1: Object
     """
     attrs_and_methods = dir(obj)
-    filtered = [item for item in attrs_and_methods if not item.startswith("__")]
-    return filtered
+    return attrs_and_methods
 
