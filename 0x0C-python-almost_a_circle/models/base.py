@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-This module contains a class Base for managing id 
+This module contains a class Base for managing id
 attributes in future classes
 
 """
@@ -19,5 +19,5 @@ class Base:
         if isinstance(id, int):
             self.id = id
         else:
-          Base.__nb_objects += 1
-          self.id = Base.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
