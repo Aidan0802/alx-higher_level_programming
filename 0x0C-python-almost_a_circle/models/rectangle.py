@@ -40,6 +40,7 @@ class Rectangle(Base):
         return self.__height
     @height.setter
     def height(self, value):
+        """Setter function"""
         if not isinstance(value, int):
             raise TypeError("must be an integer")
         if value <= 0:
@@ -71,4 +72,3 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("must be greater than 0")
         self.__y = value
-
