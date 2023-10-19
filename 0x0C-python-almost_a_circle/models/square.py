@@ -27,6 +27,5 @@ class Square(Rectangle):
         Args:
             parm: set value
         """
-        self.height = value
         self.width = value
-
+        self.height = value
