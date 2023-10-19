@@ -5,8 +5,6 @@ This module contains a class Rectangle that
 inherits from class Base
 
 """
-
-
 from models.base import Base
 
 
@@ -113,3 +111,17 @@ class Rectangle(Base):
         y = self.__y
         id = self.id
         return f"[Rectangle] ({id}) {x}/{y} - {w}/{h}"
+
+    def update(self, *args):
+        """This function updates public attributes"""
+        if args:
+            if len(args) >= 1:
+                self.id = args[0]
+            if len(args) >= 2:
+                self.width = args[1]
+            if len(args) >= 3:
+                self.height = args[2]
+            if len(args) >= 4:
+                self.x = args[3]
+            if len(args) >= 5:
+                self.y = args[4]
