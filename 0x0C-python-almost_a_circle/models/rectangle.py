@@ -5,8 +5,6 @@ This module contains a class Rectangle that
 inherits from class Base
 
 """
-
-
 from models.base import Base
 
 
@@ -118,7 +116,7 @@ class Rectangle(Base):
         """This function updates public attributes"""
         if args:
             arg_names = ['id', 'width', 'height', 'x', 'y']
-            for i arg in enumerate(args):
+            for i, arg in enumerate(args):
                 if i < len(arg_names):
                     setattr(self, arg_names[i], arg)
         if kwargs:
