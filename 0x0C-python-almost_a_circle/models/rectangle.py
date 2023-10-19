@@ -5,8 +5,8 @@ This module contains a class Rectangle that
 inherits from class Base
 
 """
-
 from models.Base import Base
+
 
 class Rectangle(Base):
     """ Inherits from class Bass
@@ -25,9 +25,13 @@ class Rectangle(Base):
     def width(self):
         """Getter function"""
         return self.__width
+
     @width.setter
     def width(self, value):
-        """Setter function"""
+        """Setter function
+        Args:
+            parm: value to set
+        """
         if not isinstance(value, int):
             raise TypeError("must be an integer")
         if value <= 0:
@@ -38,9 +42,13 @@ class Rectangle(Base):
     def height(self):
         """Getter function"""
         return self.__height
+
     @height.setter
     def height(self, value):
-        """Setter function"""
+        """Setter function
+        Args:
+            parm: value to set
+        """
         if not isinstance(value, int):
             raise TypeError("must be an integer")
         if value <= 0:
@@ -51,9 +59,13 @@ class Rectangle(Base):
     def x(self):
         """Getter function"""
         return self.__x
+
     @x.setter
     def x(self, value):
-        """Setter function"""
+        """Setter function
+        Args:
+            parm: value to set
+        """
         if not isinstance(value, int):
             raise TypeError("must be an integer")
         if value <= 0:
@@ -64,9 +76,13 @@ class Rectangle(Base):
     def y(self):
         """Getter function"""
         return self.__y
+
     @y.setter
     def y(self, value):
-        """Setter function"""
+        """Setter function
+        Args:
+            parm: value to set
+        """
         if not isinstance(value, int):
             raise TypeError("must be an integer")
         if value <= 0:
