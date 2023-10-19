@@ -40,6 +40,8 @@ class Base:
             list_objs = []
         filename = f"{cls.__name__}.json"
 
+        dictionaries = [obj.to_dictionary() for obj in list_objs]
+        json_string = cls.to_json_string(dictionaries)
+
         with open(filename, 'w') as file:
-            json_string = cls.to_json_string(list_objs)
             file.write(json_string)
