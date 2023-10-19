@@ -9,7 +9,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ Inherits from class Bass
+    """ Inherits from class Base
     Args:
         parm1: class Base
     """
@@ -122,3 +122,13 @@ class Rectangle(Base):
         if kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Returns a dictionary representation of the Rectangle"""
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+            }
