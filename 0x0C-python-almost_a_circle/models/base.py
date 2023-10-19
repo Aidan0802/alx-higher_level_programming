@@ -5,6 +5,7 @@ This module contains a class Base for managing id
 attributes in future classes
 
 """
+import json
 
 
 class Base:
