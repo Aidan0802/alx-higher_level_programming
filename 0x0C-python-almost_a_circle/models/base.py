@@ -57,7 +57,7 @@ class Base:
         return json.loads(json_string)
 
     @classmethod
-    def create(cls. **dictionary):
+    def create(cls, **dictionary):
         """Create an instance with attrs set from dictionary
         Args:
             parm: Dictionary
