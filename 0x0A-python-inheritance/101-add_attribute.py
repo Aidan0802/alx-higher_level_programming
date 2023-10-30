@@ -7,6 +7,8 @@ This module contains a function add_attribute
 
 
 def add_attribute(obj, attr_name, attr_val):
+    """This function adds an attribute"""
+
     setattr(obj, attr_name, attr_val)
 
     if not hasattr(obj, attr_name) or getattr(obj, attr_name) != attr_val:
