@@ -10,4 +10,4 @@ def inherits_from(obj, a_class):
     """If object inherits from a specified class
     return true
     """
-    return any(isinstance(type(obj), cls) for cls in a_class.mro())
+    return type(obj) is not a_class and isinstance(obj, a_class)
