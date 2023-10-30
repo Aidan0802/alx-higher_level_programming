@@ -6,7 +6,7 @@ This module contains a function is_kind_of_class
 """
 
 
-def is_kind_od_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """If object is the exact instance of or inherit
     of specified class return true
     """
