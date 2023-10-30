@@ -22,5 +22,7 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-        """Method that returns printable string"""
+        """ Method that returns printable string
+
+        """
         return f"[Rectangle] {self.__width}/}self.__height}"
