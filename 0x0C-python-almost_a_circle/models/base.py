@@ -93,14 +93,14 @@ class Base:
         filename = f"{cls.__name__}.csv"
 
         with open(filename, 'w', newline='') as file:
-        writer = csv.writer(file)
+            writer = csv.writer(file)
         for obj in list_objs:
             if cls.__name__ == "Rectangle":
                 data = [obj.id, obj.width, obj.height, obj.x, obj.y]
             elif cls.__name__ == "Square":
                 data = [obj.id, obj.size, obj.x, obj.y]
             writer.writerow(data)
- 
+
     @classmethod
     def load_from_file_csv(cls):
         """Returns a list of instances from the CSV file"""
