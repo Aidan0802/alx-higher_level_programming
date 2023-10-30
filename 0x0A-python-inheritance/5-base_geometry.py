@@ -6,6 +6,6 @@ This module contains an empty class BaseGeometry
 """
 
 
-def BaseGeometry:
+class BaseGeometry:
     """This is an empty class"""
     pass
