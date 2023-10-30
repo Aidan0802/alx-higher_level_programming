@@ -83,3 +83,47 @@ class Base:
                 return instances
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Writes the CSV string representation of list_objs to a file
+        Args:
+        list_objs: List of instances that inherit from Base
+        """
+        filename = f"{cls.__name__}.csv"
+
+        with open(filename, 'w', newline='') as file:
+        writer = csv.writer(file)
+        for obj in list_objs:
+            if cls.__name__ == "Rectangle":
+                data = [obj.id, obj.width, obj.height, obj.x, obj.y]
+            elif cls.__name__ == "Square":
+                data = [obj.id, obj.size, obj.x, obj.y]
+            writer.writerow(data)
+ 
+    @classmethod
+    def load_from_file_csv(cls):
+        """Returns a list of instances from the CSV file"""
+        filename = f"{cls.__name__}.csv"
+        instances = []
+
+        try:
+            with open(filename, 'r', newline='') as file:
+                reader = csv.reader(file)
+                for row in reader:
+                    if cls.__name__ == "Rectangle":
+                        id, width, height, x, y = map(int, row)
+                        instance = cls(width, height)
+                        instance.id = id
+                        instance.x = x
+                        instance.y = y
+                    elif cls.__name__ == "Square":
+                        id, size, x, y = map(int, row)
+                        instance = cls(size)
+                        instance.id = id
+                        instance.x = x
+                        instance.y = y
+                    instances.append(instance)
+                return instances
+        except FileNotFoundError:
+            return []
