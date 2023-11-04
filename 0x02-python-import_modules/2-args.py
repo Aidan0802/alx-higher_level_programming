@@ -5,6 +5,7 @@ if __name__ == "__main__":
     argv = sys.argv[1:]
     argc = 0
     length = len(argv)
+
     if length > 1:
         print("{} arguments:".format(length))
         while argc < length:

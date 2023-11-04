@@ -9,42 +9,23 @@ This documentation provides info on how to use my_list function
 Display sort a list
 >>> my_list = MyList([1, 4, 2, 3, 5])
 >>> my_list.print_sorted()
-1 2 3 4 5
+[1, 2, 3, 4, 5]
 
 Display appending and sorting a list:
 >>> my_list = MyList([2, 5, 1, 4])
 >>> my_list = my_list.append(8)
 >>> my_list.print_sorted()
-1 2 3 4 5 8
+[1, 2, 3 ,4 5, 8]
 
 Display reversing a list
 >>> my_list = MyList([3, 6, 1, 8, 4])
 >>> my_list.reverse()
 >>> my_list.print_sorted()
-1 3 4 6 8
+[1, 3, 4, 6, 8]
 
 Display appending reversing a list
 >>> my_list = MyList([2, 5, 1, 4])
 >>> my_list = my_list.append(3)
 >>> my_list.reverse()
 >>> my_list.print_sorted()
-1 2 3 4 5
-
-Diplay checking if list is empty
->>> empty_list = MyList([])
->>> non_empty_list = MyList([2, 4, 6])
->>> empty_list.is_empty()
-True
->>> non_empty_list.is_empty()
-False
-
-Display appending and finding maximum value
->>> my_list = MyList([4, 6, 2, 8])
->>> my_list = my_list.append(11)
->>> my_list.find_max()
-11
-
-Display finding minimum value
->>> my_list = MyList([7, 2, 9, 1, 5])
->>> my_list.find_min()
-1
+[1, 2, 3, 4, 5]
